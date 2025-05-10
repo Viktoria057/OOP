@@ -8,10 +8,9 @@ public class Task_4 {
             String name = scanner.next();
             System.out.print("Enter your age:");
             int age = scanner.nextInt();
-            System.out.println("Enter your name:" +name);
-            System.out.println("Enter your age:" +age);
+            System.out.println("Your name: " +name);
+            System.out.println("Your age :" +age);
 
-            System.out.println("\"Name: %s, Age: %d\\n\", name, age");
             scanner.close();
         }
     }
