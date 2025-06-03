@@ -1,4 +1,4 @@
-package Lab11;
+package Lab11.Part2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class Part2 {
     private static final Scanner scanner =new Scanner(System.in);
     private static final List<String> tasks = new ArrayList<>();
     private static final List<Boolean> taskStatus = new ArrayList<>();
-    
+
     public static void main (String[] args){
         while (true){
             showMenu();
@@ -73,7 +73,7 @@ public class Part2 {
     private static int getValidIndex() {
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid task number.");
-                    scanner.next();
+            scanner.next();
         }
         int index = scanner.nextInt() - 1;
         scanner.nextLine(); // Consume newline
@@ -100,5 +100,3 @@ public class Part2 {
 
 
 }
-
-

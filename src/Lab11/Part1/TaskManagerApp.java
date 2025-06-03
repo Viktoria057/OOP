@@ -1,10 +1,10 @@
-package Lab11;
+package Lab11.Part1;
 
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Main {
+public class TaskManagerApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> tasks = new ArrayList<>();
@@ -18,6 +18,8 @@ public class Main {
             System.out.println("5. Exit");
 
             int choice = scanner.nextInt();
+            scanner.nextLine();
+
             switch (choice) {
                 case 1:
                     if (tasks.isEmpty()) {
